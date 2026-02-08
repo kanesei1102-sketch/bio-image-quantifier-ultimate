@@ -32,21 +32,13 @@ fileWatcherType = "auto"
 # --------------------------------------------
 # Performance Optimization
 # --------------------------------------------
+# 既存の設定に以下を追加・修正
 [runner]
-# Fast reruns - UI応答性向上
+enforceSerializableSessionState = false  # ← これを追加またはtrueをfalseに変更
 fastReruns = true
-
-# Magic commands - プロダクション用無効化
 magicEnabled = false
-
-# Matplotlib fix - 科学的プロット対応
-fixMatplotlib = true
-
-# Post-script garbage collection - メモリ最適化
 postScriptGC = true
 
-# Enforce serializable session state - 大量データ処理安定化
-enforceSerializableSessionState = true
 
 # --------------------------------------------
 # Theme Configuration (Professional)
