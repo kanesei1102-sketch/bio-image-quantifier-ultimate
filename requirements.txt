@@ -1,4 +1,3 @@
-# Bio-Image Quantifier Ultimate - Streamlit Cloud対応版
 streamlit>=1.31.0
 numpy>=1.26.0,<2.0.0
 pandas>=2.0.0,<2.3.0
