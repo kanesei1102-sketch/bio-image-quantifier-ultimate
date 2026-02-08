@@ -1,0 +1,118 @@
+# ============================================
+# Bio-Image Quantifier Ultimate - Streamlit Configuration
+# Version: 4.0.0-Ultimate-Hybrid
+# Purpose: Cloud deployment optimization & regulatory compliance
+# ============================================
+
+# --------------------------------------------
+# Server Configuration (Critical for Performance)
+# --------------------------------------------
+[server]
+# Maximum file upload size (MB) - 大容量TIFF対応
+maxUploadSize = 200
+
+# Maximum WebSocket message size (MB)
+maxMessageSize = 200
+
+# Enable WebSocket compression - ネットワーク高速化
+enableWebsocketCompression = true
+
+# XSRF protection - セキュリティ強化
+enableXsrfProtection = true
+
+# CORS settings - セキュリティ
+enableCORS = false
+
+# Headless mode - クラウド環境必須
+headless = true
+
+# File watcher type - クラウド環境最適化
+fileWatcherType = "auto"
+
+# --------------------------------------------
+# Performance Optimization
+# --------------------------------------------
+[runner]
+# Fast reruns - UI応答性向上
+fastReruns = true
+
+# Magic commands - プロダクション用無効化
+magicEnabled = false
+
+# Matplotlib fix - 科学的プロット対応
+fixMatplotlib = true
+
+# Post-script garbage collection - メモリ最適化
+postScriptGC = true
+
+# Enforce serializable session state - 大量データ処理安定化
+enforceSerializableSessionState = true
+
+# --------------------------------------------
+# Theme Configuration (Professional)
+# --------------------------------------------
+[theme]
+# 規制対応グレードの視認性重視配色
+primaryColor = "#0068C9"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#262730"
+font = "sans serif"
+
+# --------------------------------------------
+# Browser Configuration
+# --------------------------------------------
+[browser]
+# 使用統計無効化 - プライバシー・規制対応
+gatherUsageStats = false
+
+# サーバーアドレス自動検出
+serverAddress = "localhost"
+serverPort = 8501
+
+# --------------------------------------------
+# Client Configuration
+# --------------------------------------------
+[client]
+# エラー詳細表示（開発時はtrue、本番環境ではfalse推奨）
+showErrorDetails = true
+
+# ツールバーモード
+toolbarMode = "auto"
+
+# --------------------------------------------
+# Logger Configuration (Audit Trail)
+# --------------------------------------------
+[logger]
+# ログレベル - 監査証跡用
+level = "info"
+
+# メッセージフォーマット - トレーサビリティ確保
+messageFormat = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# --------------------------------------------
+# Global Configuration
+# --------------------------------------------
+[global]
+# 開発モード（本番環境ではfalse）
+developmentMode = false
+
+# DataFrame serialization - 高速データ処理
+dataFrameSerialization = "arrow"
+
+# --------------------------------------------
+# Cache Configuration (Memory Management)
+# --------------------------------------------
+[cache]
+# 最大キャッシュサイズ (MB) - 大量画像処理対応
+maxCachedItemSize = 300
+
+# キャッシュTTL (秒) - 1時間
+ttl = 3600
+
+# --------------------------------------------
+# Deprecation Settings
+# --------------------------------------------
+[deprecation]
+# Matplotlib global use warning無効化
+showPyplotGlobalUse = false
